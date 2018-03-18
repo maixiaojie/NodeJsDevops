@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Nodejs项目devOps</title>
+	<link rel="stylesheet" href="http://www.jq22.com/demo/scrollbar-plugin-150125150551/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">基于pm2的Nodejs项目devOps（自动化构建部署）</div>
+		<div class="main">
+			<div class="info">
+				<ul>
+					<li id="connectionStatus"><a href="javascript:;"><span class=""></span> 服务器链接状态</a></li>
+					<li class="btn" id="connect"><a href="javascript:;">点击链接服务器</a></li>
+					<li class="btn" id="disconnect"><a href="javascript:;"> 点击断开链接</a></li>
+					<li class="btn" id="pullProjectList"><a href="javascript:;">获取项目列表</a></li>
+					<!-- <li id="onTotalScrollBack"><a href="#"><span></span> onTotalScrollBack</a></li>
+					<li id="whileScrolling"><a href="#"><span class=""></span> whileScrolling</a></li>
+					<li id="alwaysTriggerOffsets" class="off"><a href="#"><span></span> always trigger offsets</a></li> -->
+				</ul>
+			</div>
+			<div class="main_content">
+				<div class="main_contents">
+					<table id="projectListTable" cellspacing="0" cellpadding="0" border="0" style="width: 100%;" class="my-table">
+						<tr>
+							<td width="10%;">App name</td>
+							<td>id</td>
+							<td>mode</td>
+							<td>pid</td>
+							<td>status</td>
+							<td>restart</td>
+							<td>uptime</td>
+							<td>cpu</td>
+							<td>mem</td>
+							<td>user</td>
+							<td>watching</td>
+							<td width="25%;">operation</td>
+						</tr>
+						<tr><td colspan="12" style="text-align:center;">请·链接服务器·并且·获取项目列表·</td></tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+		<div class="console">
+			<div class="console_container">
+				<div class="console_warp">
+					<pre id="messages">
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+	<canvas></canvas>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="http://www.jq22.com/demo/scrollbar-plugin-150125150551/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../js/socket.io.js"></script>
+	<script src="../js/canvas.js" charset="utf-8"></script>
+	<script src="../js/index.js" charset="utf-8"></script>
+</body>
+</html>
