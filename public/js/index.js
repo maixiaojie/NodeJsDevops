@@ -7,7 +7,7 @@ $(document).ready(function() {
   });
   var socket = null,socketStatus = false;
   $('#connect').on('click', function() {
-    socket = io.connect('http://localhost:8001');
+    socket = io.connect('http://dev.mcust.cn');
     socket.on('connect', function() {
       $('#connectionStatus').find('span').addClass('on');
       handleConsoleMsg({sysin: "socket connected.."});
